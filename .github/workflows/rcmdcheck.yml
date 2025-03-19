@@ -76,12 +76,9 @@ jobs:
       - uses: r-lib/actions/setup-r-dependencies@v2
         with:
           cache-version: 2
-          extra-packages: |
-            any::ggplot2
-            any::rcmdcheck
           needs: |
-            website
-            coverage
+            imports
+            suggests
       #- name: Install dependencies
       #  run: |
       #    remotes::install_deps(dependencies = TRUE)
