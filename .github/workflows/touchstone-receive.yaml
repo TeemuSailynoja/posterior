@@ -44,7 +44,7 @@ jobs:
     steps:
       - uses: lorenzwalthert/touchstone/actions/receive@a02c45d24459777f4bbed5e5cc0c94571799f51f
         with:
-          cache-version: 2
+          cache-version: 1
           benchmarking_repo: ${{ matrix.config.benchmarking_repo }}
           benchmarking_ref: ${{ matrix.config.benchmarking_ref }}
           benchmarking_path: ${{ matrix.config.benchmarking_path }}
